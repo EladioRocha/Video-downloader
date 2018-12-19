@@ -1,0 +1,23 @@
+.bg-primary{
+  background-color: #2A4E6E !important;
+}
+
+.bg-secondary{
+  background-color: #363377 !important;
+}
+
+.bg-last{
+  background-color: #267356 !important;
+}
+
+.mt-3{
+  margin-top: 3%;
+}
+
+.mt-2{
+  margin-top: 2%;
+}
+
+.mt-1{
+  margin-top: 1%;
+}

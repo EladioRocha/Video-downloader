@@ -1,0 +1,72 @@
+<%- include('partials/_header') %>
+
+<div class="container-fluid">
+  <div class="row bg-primary">
+    <section class="col s12">
+      <div class="row">
+        <article class="col s12 mt-3">
+          <h5 class="white-text center">Download video from YouTube to MP4, MP3, WEBM, and others.</h5>
+        </article>
+        <article class="col s12 center-align mt-2 center" id="data-link">
+          <input type="text" id="youtube-link" placeholder="Enter your YouTube link here." class="white-text center">
+          <button type="button" class="white-text btn bg-last mt-1" id="download">Download</button>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="hide container-fluid" id="animation-downloading">
+  <div class="row">
+    <div class="col s12">
+      <div class="center">
+        <h6 id="is-downloading">The video is downloading...</h6>
+        <img src="img/downloading.gif" alt="The video is downloading" width="150" height="100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col s12 l6">
+      <h5 class="center">Preview video</h5>
+      <div class="center">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen id="preview-video"></iframe>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <h5 class="center">Download video</h5>
+      <div class="center">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Format</th>
+              <th>Size</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MP4</td>
+              <td class="file-size"></td>
+              <td class="button-download" id="MP4"></td>
+            </tr>
+            <tr>
+              <td>WEBM</td>
+              <td class="file-size"></td>
+              <td class="button-download" id="WEBM"></td>
+            </tr>
+            <tr>
+              <td>MP3</td>
+              <td class="file-size"></td>
+              <td class="button-download" id="MP3"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/_footer') %>
