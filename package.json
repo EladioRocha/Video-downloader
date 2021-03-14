@@ -14,7 +14,8 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "ytdl": "^0.10.4"
+    "ytdl": "^0.10.4",
+    "ytdl-core": "^4.5.0"
   },
   "devDependencies": {}
 }
